@@ -8,16 +8,17 @@
             <div class="col-4">
 
                 <h2 class="text-center">Sign In</h2>
-                <form action="" class="">
+                <form action="/login" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" name="email">
 
                     </div>
                     <br>
                     <div class="form-group">
                         <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password" name="pswd">
 
                     </div>
                     <br>
@@ -36,8 +37,7 @@
     </div>
 
 
-</body>
-</html>
+
 
 
 
